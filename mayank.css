@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/wp6211047-1920x1080-anime-night-sky-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    padding: 2;
+}
+
+.pfp {
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 3px;
+    object-fit: contain;
+}
+
+.name {
+    color: rgba(63, 21, 125, 0.862);
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    color: rgb(14, 6, 17);
+    display: center;
+    text-align: center;
+    font: bold;
+    font-family: fantasy;
+}
+.insta{
+    padding-top: 100px;
+}
+.ins{
+    padding: 20px 115px 20px 115px;
+    border-radius: 50px;
+    background-color: rgb(33, 77, 165);
+}
+.dico{
+    padding-top: 30px;
+}
+.dc{
+    padding: 20px 133px 20px 133px;
+    border-radius: 50px;
+    background-color: rgb(33, 77, 165);
+}
+.sta{
+    padding: 20px 149px 20px 149px;
+    border-radius: 50px;
+    background-color: rgb(33, 77, 165);
+}
+.last{
+    padding-top: 100px;
+}
