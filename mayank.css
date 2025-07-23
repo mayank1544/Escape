@@ -1,59 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import clean readable font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
     background-image: url(images/wp6211047-1920x1080-anime-night-sky-wallpapers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-}
-
-.photo {
-    display: flex;
-    justify-content: center;
-    margin-top: 8vh;
-}
-
-.pfp {
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
 }
 
 .name {
     color: rgba(200, 200, 255, 0.95);
     text-align: center;
     margin: 20px 0;
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 1.8rem; /* Shrunk from 2.2rem */
+    font-weight: 600;
 }
 
-.about {
-    text-align: center;
-    font-family: fantasy;
-    font-weight: bold;
-    color: #f0f0f0;
-}
-
-.about ol {
-    list-style: none;
-    margin-bottom: 40px;
-}
-
+/* Make all social buttons uniform */
 .social-buttons {
     display: flex;
     flex-direction: column;
@@ -66,41 +33,42 @@ body {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    background-color: rgba(33, 77, 165, 0.8);
-    color: white;
-    padding: 15px 40px;
+    background-color: rgba(33, 77, 165, 0.9);
+    color: #f0f0f0;
+    padding: 15px 30px;
     border-radius: 50px;
     font-size: 1rem;
+    font-weight: 500;
     transition: all 0.3s ease;
-}
-
-.social-buttons a:hover {
-    background-color: rgba(33, 77, 165, 1);
-    transform: scale(1.05);
+    width: fit-content;
+    max-width: 90%;
 }
 
 .social-buttons i {
     font-size: 1.2rem;
 }
 
-/* Footer Spacer */
-.last {
-    padding-top: 100px;
+/* Hover & focus for accessibility */
+.social-buttons a:hover {
+    background-color: rgba(33, 77, 165, 1);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(33, 77, 165, 0.6);
 }
 
-/* Responsive for mobile */
-@media (max-width: 600px) {
-    .pfp {
-        width: 90px;
-        height: 90px;
-    }
+.social-buttons a:focus {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
     .name {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .social-buttons a {
         font-size: 0.9rem;
-        padding: 12px 25px;
+        padding: 12px 20px;
+        width: 90%;
     }
 }
