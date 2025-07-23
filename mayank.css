@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,62 +5,102 @@
 }
 
 body {
-    font-family: 'Rubik', 'Segoe UI', sans-serif;
-    color: #ffffff;
     background-image: url(images/wp6211047-1920x1080-anime-night-sky-wallpapers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     padding: 20px;
 }
 
 .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.photo {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
-.profile {
-    max-width: 250px;
-    text-align: left;
-}
-
-.profile img {
-    width: 100px;
-    height: 100px;
+.pfp {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
-
-.profile ul {
-    list-style: decimal;
-    font-size: 1rem;
-    padding-left: 20px;
 }
 
 .name {
+    color: rgba(200, 200, 255, 0.95);
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: rgba(240, 240, 255, 0.9);
+    margin: 20px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.about ol {
+    list-style: none;
+    margin-bottom: 40px;
 }
 
 .social-buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
-    flex-grow: 1;
+    align-items: center;
 }
 
 .social-buttons a {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    background-color: rgba(33, 77, 1
+    gap: 10px;
+    text-decoration: none;
+    background-color: rgba(33, 77, 165, 0.8);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-buttons a:hover {
+    background-color: rgba(33, 77, 165, 1);
+    transform: scale(1.05);
+}
+
+.social-buttons i {
+    font-size: 1.2rem;
+}
+
+
+.last {
+    padding-top: 100px;
+}
+
+
+@media (max-width: 600px) {
+    .pfp {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .social-buttons a {
+        font-size: 0.9rem;
+        padding: 12px 25px;
+    }
+}
