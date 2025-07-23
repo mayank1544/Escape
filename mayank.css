@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,55 +10,97 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
 }
 
 .photo {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
-    padding: 2;
+    margin-top: 8vh;
 }
 
 .pfp {
     border-radius: 50%;
-    box-shadow: 1px 1px 8px 3px;
-    object-fit: contain;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
 
 .name {
-    color: rgba(63, 21, 125, 0.862);
-    display: flex;
-    justify-content: center;
+    color: rgba(200, 200, 255, 0.95);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .about {
-    color: rgb(14, 6, 17);
-    display: center;
     text-align: center;
-    font: bold;
     font-family: fantasy;
+    font-weight: bold;
+    color: #f0f0f0;
 }
-.insta{
+
+.about ol {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: rgba(33, 77, 165, 0.8);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-buttons a:hover {
+    background-color: rgba(33, 77, 165, 1);
+    transform: scale(1.05);
+}
+
+.social-buttons i {
+    font-size: 1.2rem;
+}
+
+/* Footer Spacer */
+.last {
     padding-top: 100px;
 }
-.ins{
-    padding: 20px 115px 20px 115px;
-    border-radius: 50px;
-    background-color: rgb(33, 77, 165);
-}
-.dico{
-    padding-top: 30px;
-}
-.dc{
-    padding: 20px 133px 20px 133px;
-    border-radius: 50px;
-    background-color: rgb(33, 77, 165);
-}
-.sta{
-    padding: 20px 149px 20px 149px;
-    border-radius: 50px;
-    background-color: rgb(33, 77, 165);
-}
-.last{
-    padding-top: 100px;
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .pfp {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .social-buttons a {
+        font-size: 0.9rem;
+        padding: 12px 25px;
+    }
 }
