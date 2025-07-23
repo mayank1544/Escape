@@ -1,73 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    padding: 20px;
+    font-family: 'Rubik', 'Segoe UI', sans-serif;
+    color: #ffffff;
     background-image: url(images/wp6211047-1920x1080-anime-night-sky-wallpapers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    max-width: 250px;
+    text-align: left;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.profile ul {
+    list-style: decimal;
+    font-size: 1rem;
+    padding-left: 20px;
 }
 
 .name {
-    color: rgba(200, 200, 255, 0.95);
     text-align: center;
-    margin: 20px 0;
-    font-size: 1.8rem; /* Shrunk from 2.2rem */
+    font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 30px;
+    color: rgba(240, 240, 255, 0.9);
 }
 
-/* Make all social buttons uniform */
 .social-buttons {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+    flex-grow: 1;
 }
 
 .social-buttons a {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    background-color: rgba(33, 77, 165, 0.9);
-    color: #f0f0f0;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: fit-content;
-    max-width: 90%;
-}
-
-.social-buttons i {
-    font-size: 1.2rem;
-}
-
-/* Hover & focus for accessibility */
-.social-buttons a:hover {
-    background-color: rgba(33, 77, 165, 1);
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(33, 77, 165, 0.6);
-}
-
-.social-buttons a:focus {
-    outline: 2px solid white;
-    outline-offset: 4px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .name {
-        font-size: 1.5rem;
-    }
-
-    .social-buttons a {
-        font-size: 0.9rem;
-        padding: 12px 20px;
-        width: 90%;
-    }
-}
+    gap: 12px;
+    background-color: rgba(33, 77, 1
